@@ -9,4 +9,8 @@ Task 3: sudo chown changes the owner of a file.
 
 Task 4: touch is used to creat an empty file.
 
-Task 5: chmod is used to add execute permission to a file 
+Task 5: chmod is used to add execute permission to a file.
+
+Task 6: chmod 554 adds multiple permissions to a file.
+
+Task 7: chmod 751 adds multiple permissions to a file. 
