@@ -7,3 +7,5 @@ TASKS
 2-hellofile - It displays the content of the /etc/passwd file.
 
 3-twofiles - It displays the content of /etc/passwd and /etc/hosts.
+
+4-lastlines - It display the last 10 lines of /etc/passwd
