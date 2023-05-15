@@ -5,3 +5,5 @@ TASKS
 1-confused_smiley - It displays a confused smiley "(Ôo)'.
 
 2-hellofile - It displays the content of the /etc/passwd file.
+
+3-twofiles - It displays the content of /etc/passwd and /etc/hosts.
