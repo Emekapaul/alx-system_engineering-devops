@@ -8,4 +8,6 @@ TASKS
 
 3-twofiles - It displays the content of /etc/passwd and /etc/hosts.
 
-4-lastlines - It display the last 10 lines of /etc/passwd
+4-lastlines - It displays the last 10 lines of /etc/passwd
+
+5-firstlines - It displays the first 10 lines of /etc/passwd
