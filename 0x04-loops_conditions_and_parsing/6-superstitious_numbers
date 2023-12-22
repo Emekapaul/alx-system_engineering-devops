@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times with exceptions 4,9&17
+
+a=1
+while [ "$a" -le 20 ]
+do
+    case "$a" in
+        4)
+            echo "$a"
+            echo "bad luck from China"
+            ;;
+
+        9)
+            echo "$a"
+            echo "bad luck from Japan"
+            ;;
+
+        17)
+            echo "$a"
+            echo "bad luck from Italy"
+            ;;
+        *)
+            echo "$a"
+            ;;
+        esac
+        ((a++))
+done
