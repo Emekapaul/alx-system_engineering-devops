@@ -1,1 +1,1 @@
-This project is about 0x06. Regular expression
+This project is about 0x06. Regular expression. Mastering Regex
