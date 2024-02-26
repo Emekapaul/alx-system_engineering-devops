@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Create a 4096-bit RSA key with passphrase "betty" and save it in the file
+# "school"
+
+KEY_NAME="school"
+BITS=4096
+PASSPHRASE="betty"
+
+ssh-keygen -t rsa -b "$BITS" -f "$KEY_NAME" -N "$PASSPHRASE"
