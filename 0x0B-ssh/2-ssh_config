@@ -1,11 +1,4 @@
 # configure local ssh client to connect with a server without password
 Host *
-	SendEnv LANG LC_*
-	HashKnownHosts yes
-	GSSAPIAuthentication yes
-	GSSAPIDelegateCredentials no
 	PasswordAuthentication no
-	IdentityFile ~/.ssh/id_rsa
-
-Host 52.201.221.234
 	IdentityFile ~/.ssh/school
