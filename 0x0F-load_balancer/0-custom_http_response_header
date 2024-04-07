@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # duplicate web-01 to web-02
 # these scripts are an upgrade from the web-server scripts...
 
