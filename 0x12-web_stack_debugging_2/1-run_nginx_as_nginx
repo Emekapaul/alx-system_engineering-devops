@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Make nginx service run as nginx.
+chmod 754 /etc/nginx/nginx.conf
+sed -i "s/#\?user .*;/user nginx;/" /etc/nginx/nginx.conf
+sed -i 's/\(^\tlisten[[:space:]]*\[\?:\?:\?\]\?:\?\)[0-9]*/\18080/' /etc/nginx/sites-available/default
+pkill apache2
+sudo -u nginx service nginx start
