@@ -1,0 +1,21 @@
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        server_name botcyba.tech www.botcyba.tech;
+        add_header X-Served-By $hostname;
+        root /var/www/botcyba.tech;
+        index index.html index.htm;
+        rewrite ^/redirect_me https://youtube.com permanent;
+        location / {
+                root /var/www/botcyba.tech/html;
+                try_files $uri $uri/ = 404;
+        }
+        location /hbnb_static {
+                alias /data/web_static/current;
+        }
+        location /airbnb-onepage/ {
+                include proxy_params;
+                proxy_pass http://127.0.0.1:5000;
+        }
+        error_page 404 /error_404.html;
+}
